@@ -1,4 +1,3 @@
-Launching lib\main.dart on Chrome in debug mode...
 ../AppData/Local/Pub/Cache/hosted/pub.dev/firebase_auth_web-5.8.13/lib/src/interop/auth_interop.dart:26:10: Error: Type 'PromiseJsImpl' not found.
 external PromiseJsImpl<void> applyActionCode(AuthJsImpl auth, String oobCode);
          ^^^^^^^^^^^^^
@@ -143,6 +142,38 @@ external PromiseJsImpl<void> updateProfile(
 ../AppData/Local/Pub/Cache/hosted/pub.dev/firebase_auth_web-5.8.13/lib/src/interop/auth_interop.dart:790:19: Error: Type 'PromiseJsImpl' not found.
   external static PromiseJsImpl<TotpSecretJsImpl> generateSecret(
                   ^^^^^^^^^^^^^
+lib/main.dart:35:42: Error: Cannot invoke a non-'const' constructor where a const expression is expected.
+Try using a constructor or factory that is 'const'.
+        '/favorites': (context) => const FavoritesScreen(),
+                                         ^^^^^^^^^^^^^^^
+lib/main.dart:36:42: Error: Cannot invoke a non-'const' constructor where a const expression is expected.
+Try using a constructor or factory that is 'const'.
+        '/community': (context) => const CommunityScreen(),
+                                         ^^^^^^^^^^^^^^^
+lib/main.dart:37:41: Error: Cannot invoke a non-'const' constructor where a const expression is expected.
+Try using a constructor or factory that is 'const'.
+        '/settings': (context) => const SettingsScreen(),
+                                        ^^^^^^^^^^^^^^
+lib/main.dart:38:43: Error: Cannot invoke a non-'const' constructor where a const expression is expected.
+Try using a constructor or factory that is 'const'.
+        '/statistics': (context) => const StatisticsScreen(),
+                                          ^^^^^^^^^^^^^^^^
+lib/main.dart:56:5: Error: Cannot invoke a non-'const' constructor where a const expression is expected.
+Try using a constructor or factory that is 'const'.
+    FavoritesScreen(),
+    ^^^^^^^^^^^^^^^
+lib/main.dart:57:5: Error: Cannot invoke a non-'const' constructor where a const expression is expected.
+Try using a constructor or factory that is 'const'.
+    CommunityScreen(),
+    ^^^^^^^^^^^^^^^
+lib/main.dart:58:5: Error: Cannot invoke a non-'const' constructor where a const expression is expected.
+Try using a constructor or factory that is 'const'.
+    StatisticsScreen(),
+    ^^^^^^^^^^^^^^^^
+lib/main.dart:59:5: Error: Cannot invoke a non-'const' constructor where a const expression is expected.
+Try using a constructor or factory that is 'const'.
+    SettingsScreen(),
+    ^^^^^^^^^^^^^^
 ../AppData/Local/Pub/Cache/hosted/pub.dev/firebase_auth_web-5.8.13/lib/src/interop/utils/utils.dart:11:23: Error: Method not found: 'dartify'.
   return core_interop.dartify(jsObject);
                       ^^^^^^^
@@ -382,5 +413,58 @@ Try correcting the name to the name of an existing method, or defining a method 
 ../AppData/Local/Pub/Cache/hosted/pub.dev/firebase_auth_web-5.8.13/lib/src/interop/multi_factor.dart:230:12: Error: Method not found: 'handleThenable'.
     return handleThenable(
            ^^^^^^^^^^^^^^
-Waiting for connection from debug service on Chrome...             18,8s
+Unhandled exception:
+Unsupported operation: Unsupported invalid type InvalidType(<invalid>) (InvalidType). Encountered while compiling file:///C:/Users/Justin%20Saager/toiletly/lib/main.dart, which contains the type: FunctionType(<invalid>
+Function(BuildContext)).
+#0      LibraryCompiler._typeCompilationError (package:dev_compiler/src/kernel/compiler_new.dart:4451)
+#1      LibraryCompiler._emitType (package:dev_compiler/src/kernel/compiler_new.dart:4416)
+#2      LibraryCompiler._emitFunctionTagged (package:dev_compiler/src/kernel/compiler_new.dart:4263)
+#3      LibraryCompiler.visitFunctionExpression (package:dev_compiler/src/kernel/compiler_new.dart:8784)
+#4      FunctionExpression.accept (package:kernel/src/ast/expressions.dart:4608)
+#5      LibraryCompiler._visitExpression (package:dev_compiler/src/kernel/compiler_new.dart:5112)
+#6      LibraryCompiler.visitMapLiteral (package:dev_compiler/src/kernel/compiler_new.dart:8700)
+#7      MapLiteral.accept (package:kernel/src/ast/expressions.dart:4290)
+#8      LibraryCompiler._visitExpression (package:dev_compiler/src/kernel/compiler_new.dart:5112)
+#9      LibraryCompiler._emitNamedExpression (package:dev_compiler/src/kernel/compiler_new.dart:7961)
+#10     LibraryCompiler._emitArgumentGroups (package:dev_compiler/src/kernel/compiler_new.dart:7947)
+#11     LibraryCompiler._emitArgumentList (package:dev_compiler/src/kernel/compiler_new.dart:7906)
+#12     LibraryCompiler.visitConstructorInvocation (package:dev_compiler/src/kernel/compiler_new.dart:8200)
+#13     ConstructorInvocation.accept (package:kernel/src/ast/expressions.dart:2686)
+#14     LibraryCompiler._visitExpression (package:dev_compiler/src/kernel/compiler_new.dart:5112)
+#15     LibraryCompiler.visitReturnStatement (package:dev_compiler/src/kernel/compiler_new.dart:5867)
+#16     ReturnStatement.accept (package:kernel/src/ast/statements.dart:1076)
+#17     LibraryCompiler._visitStatement (package:dev_compiler/src/kernel/compiler_new.dart:5015)
+#18     MappedIterable.elementAt (dart:_internal/iterable.dart:402)
+#19     ListIterator.moveNext (dart:_internal/iterable.dart:371)
+#20     new _GrowableList._ofEfficientLengthIterable (dart:core-patch/growable_array.dart:194)
+#21     new _GrowableList.of (dart:core-patch/growable_array.dart:154)
+#22     new List.of (dart:core-patch/array_patch.dart:39)
+#23     SetBase.toList (dart:collection/set.dart:119)
+#24     LibraryCompiler.visitBlock (package:dev_compiler/src/kernel/compiler_new.dart:5222)
+#25     Block.accept (package:kernel/src/ast/statements.dart:103)
+#26     LibraryCompiler._visitStatement (package:dev_compiler/src/kernel/compiler_new.dart:5015)
+#27     LibraryCompiler._emitFunctionScopedBody (package:dev_compiler/src/kernel/compiler_new.dart:5048)
+#28     LibraryCompiler._emitFunction.<anonymous closure> (package:dev_compiler/src/kernel/compiler_new.dart:4638)
+#29     LibraryCompiler._withLetScope (package:dev_compiler/src/kernel/compiler_new.dart:3632)
+#30     LibraryCompiler._withCurrentFunction (package:dev_compiler/src/kernel/compiler_new.dart:4812)
+#31     LibraryCompiler._emitFunction (package:dev_compiler/src/kernel/compiler_new.dart:4630)
+#32     LibraryCompiler._emitMethodDeclaration.<anonymous closure> (package:dev_compiler/src/kernel/compiler_new.dart:2912)
+#33     LibraryCompiler._withMethodDeclarationContext (package:dev_compiler/src/kernel/compiler_new.dart:4837)
+#34     LibraryCompiler._emitMethodDeclaration (package:dev_compiler/src/kernel/compiler_new.dart:2910)
+#35     LibraryCompiler._emitClassProperties (package:dev_compiler/src/kernel/compiler_new.dart:2851)
+#36     LibraryCompiler._emitClassDeclaration (package:dev_compiler/src/kernel/compiler_new.dart:1452)
+#37     LibraryCompiler._emitClass (package:dev_compiler/src/kernel/compiler_new.dart:1390)
+#38     List.forEach (dart:core-patch/growable_array.dart:425)
+#39     LibraryCompiler._emitLibrary (package:dev_compiler/src/kernel/compiler_new.dart:1312)
+#40     LibraryCompiler.emitLibrary (package:dev_compiler/src/kernel/compiler_new.dart:926)
+#41     LibraryBundleCompiler.emitModule (package:dev_compiler/src/kernel/compiler_new.dart:163)
+#42     IncrementalJavaScriptBundler.compile (package:frontend_server/src/javascript_bundle.dart:300)
+#43     FrontendCompiler.writeJavaScriptBundle (package:frontend_server/frontend_server.dart:898)
+<asynchronous suspension>
+#44     FrontendCompiler.compile (package:frontend_server/frontend_server.dart:708)
+<asynchronous suspension>
+#45     listenAndCompile.<anonymous closure> (package:frontend_server/frontend_server.dart:1423)
+<asynchronous suspension>
+The Dart compiler exited unexpectedly.
+Waiting for connection from debug service on Chrome...             17,7s
 Failed to compile application.
